@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;array&apos; in &apos;streams_part1.Streams.main(...)&apos; to &apos;list&apos;&#x0A;- Original project: &apos;streams_part1&apos;&#x0A;- Original element: &apos;streams_part1.Streams.main(String[]).array&apos;&#x0A;- Renamed element: &apos;array&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;array&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;streams_part1{Streams.java[Streams~main~\[QString;@array!208!282!221!225!QList\&lt;QString;&gt;;!0!false" name="list" references="true" stamp="1493238890701" version="1.0"/>
+</session>

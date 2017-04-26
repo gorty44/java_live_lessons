@@ -1,20 +1,7 @@
 INDEX VERSION 1.130+/home/dawid/nauka_programowania/nauka_javy/workspace/.metadata/.plugins/org.eclipse.jdt.core
-1544989069.index
-2748032828.index
-1969940403.index
-2284376462.index
+3970374504.index
 1121438932.index
 2961758373.index
-4248549073.index
-1040655347.index
-3108516103.index
-769845605.index
 4177351153.index
 3348097075.index
-2809871796.index
-423924071.index
-3927896770.index
-1900679548.index
 696355103.index
-4016742791.index
-3310908037.index
