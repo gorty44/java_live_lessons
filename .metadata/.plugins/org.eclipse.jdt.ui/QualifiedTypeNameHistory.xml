@@ -5,4 +5,7 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java_8_interfaces.Square"/>
+<fullyQualifiedTypeName name="java_8_interfaces.EquilateralTriangle"/>
+<fullyQualifiedTypeName name="java_8_interfaces.RegularPolygon"/>
 </qualifiedTypeNameHistroy>

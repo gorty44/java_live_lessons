@@ -1,0 +1,42 @@
+package lambds_part4;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class FunctionUtils {
+	@SafeVarargs
+	public static <T> T firstAllMatch(Stream<T> stream, Predicate<T>... predicates) {
+		Predicate<T> predicate = passAllPredicates(predicates);
+		return stream.filter(predicate).findFirst().orElse(null);
+	}
+
+	@SafeVarargs
+	private static <T> Predicate<T> passAllPredicates(Predicate<T>... predicates) {
+		Predicate<T> result = predicates[0];
+		for (int i = 1; i < predicates.length; i++)
+			result = result.and(predicates[0]);
+		return result;
+	}
+	
+	@SafeVarargs
+	public static <T> T firstAnyMatch(Stream<T> stream, Predicate<T>...predicates predicates) {
+		
+	}
+	
+	@SafeVarargs
+	private static <T> Predicate<T> passAnyPredicates(Predicate<T>...predicates) {
+		Predicate<T> result = predicates[0];
+	}
+
+	@SafeVarargs
+	private static <T> void testingMethod(Stream<T> stream, Predicate<T>... predicates) {
+		System.out.println(firstAllMatch(stream, predicates));
+	}
+
+	public static void main(String[] args) {
+		List<String> words = Arrays.asList("hello", "hi", "goodbye", "bye", "czternascie");
+		testingMethod(words.stream(), word -> word.length() > 8, word -> word.contains("e"));
+	}
+}

@@ -1,0 +1,19 @@
+package lambds_part4;
+
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class FunctionUtils {
+	public static <T> T firstAllMatch(Stream<T> stream, Predicate<T>... predicates) {
+		Predicate<T> predicate = passAllPredicates(predicates);
+		return stream.filter(predicate).findFirst().orElse(null);
+	}
+
+	private static <T> Predicate<T> passAllPredicates(Predicate<T>... predicates) {
+		Predicate<T> result = predicates[0];
+		for (int i = 0; i < predicates.length; i++)
+			result = result.and(predicates[0]);
+		return result;
+	}
+}
