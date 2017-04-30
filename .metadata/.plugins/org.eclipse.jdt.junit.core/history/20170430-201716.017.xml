@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ListTests" project="junit_tut" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="junit_tut.ListTests" time="0.012">
+    <testcase name="defaultListHasSixStrings" classname="junit_tut.ListTests" time="0.011"/>
+    <testcase name="defaultListHasCorrectSize" classname="junit_tut.ListTests" time="0.001"/>
+  </testsuite>
+</testrun>

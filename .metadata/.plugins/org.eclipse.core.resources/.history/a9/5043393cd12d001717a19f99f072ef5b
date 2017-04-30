@@ -1,0 +1,17 @@
+package junit_tut;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+public class ListTests {
+	private List<String> strings = Arrays.asList("this", "is", "a", "list", "of", "strings");
+
+	@Test
+	public void defaultListHasSixStrings() {
+		assertThat(strings.size(), is(6));
+	}
+}
