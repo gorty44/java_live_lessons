@@ -1,0 +1,12 @@
+package lambdas_part1;
+
+import org.junit.Test;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
+
+public class UnitTesting {
+	@Test
+	public void betterEntryTest() {
+		assertThat
+	}
+}
