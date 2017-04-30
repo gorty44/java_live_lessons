@@ -1,0 +1,14 @@
+package junit_tut;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+public class Testing {
+
+	@Test
+	public void method() {
+		String someString = "raz";
+		assertThat(someString, is(equalTo("raz")));
+	}
+}

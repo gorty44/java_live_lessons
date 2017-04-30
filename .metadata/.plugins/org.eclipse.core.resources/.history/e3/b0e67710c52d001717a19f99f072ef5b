@@ -1,0 +1,9 @@
+package junit_tut;
+
+public class GovernmentUtils {
+	public static String calmString(String s) {
+		if (s == null)
+			return null;
+		return s.replaceAll("!", "");
+	}
+}

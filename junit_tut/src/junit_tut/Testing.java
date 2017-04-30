@@ -1,0 +1,45 @@
+package junit_tut;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+public class Testing {
+
+	@Test
+	public void method() {
+		String s = "dad";
+		assertTrue(StringUtils.isPalindrome(s));
+		assertThat("foo", is(equalTo(StringUtils.reverseString("oof"))));
+		assertThat("rab", is(equalTo(StringUtils.reverseString("bar"))));
+		assertThat("Baz!", is(equalTo(StringUtils.reverseString("!zaB"))));
+	}
+
+	@Test
+	public void testPalindromes() {
+		String[] matches = { "a", "aba", "Aba", "abba", "AbBa", "abcdeffedcba", "abcdEffedcba" };
+		String[] misMatches = { "ax", "abax", "Abxa", "abbxa", "AbBax", "abcdeffexdcba", "abcxdEffedcba" };
+
+		for (String s : matches)
+			assertThat(StringUtils.isPalindrome(s), is(true));
+		for (String s : misMatches)
+			assertThat(StringUtils.isPalindrome(s), is(false));
+	}
+
+	@Test
+	public void testPalindromesTrad() {
+		String[] matches = { "a", "aba", "Aba", "abba", "AbBa", "abcdeffedcba", "abcdEffedcba" };
+		String[] misMatches = { "ax", "abax", "Abxa", "abbxa", "AbBax", "abcdeffexdcba", "abcxdEffedcba" };
+
+		for (String s : matches)
+			assertTrue(StringUtils.isPalindrome(s));
+		for (String s : misMatches)
+			assertFalse(StringUtils.isPalindrome(s));
+	}
+
+	@Test
+	public void testReverse() {
+		assertEquals("foo", StringUtils.reverseString("oof"));
+		assertEquals("rab", StringUtils.reverseString("bar"));
+	}
+}

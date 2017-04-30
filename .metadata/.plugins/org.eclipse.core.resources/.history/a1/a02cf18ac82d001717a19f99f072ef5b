@@ -1,0 +1,41 @@
+package junit_tut;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class GovernmentUtils {
+	public static String calmString(String s) {
+		if (s == null)
+			return null;
+		return s.replaceAll("!", "");
+	}
+
+	public static List<String> calmAttendees(List<String> attendees) {
+		if (attendees == null)
+			return null;
+		if (attendees.contains("Republican") && attendees.contains("Democrat")) {
+			double random = Math.random();
+			if (random >= 0.5)
+				attendees.forEach(e -> {
+					if (e.equals("Republican")) {
+						e = null;
+					}
+					;
+				});
+			else
+				attendees.forEach(e -> {
+					if (e.equals("Democrat")) {
+						e = null;
+					}
+					;
+				});
+		}
+		return attendees;
+	}
+
+	public static void main(String[] args) {
+		List<String> attendees = Arrays.asList("Republican", "Democrat");
+		List<String> a2 = GovernmentUtils.calmAttendees(attendees);
+		System.out.println(a2);
+	}
+}

@@ -1,0 +1,13 @@
+package junit_tut;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+
+public class UnitTests {
+	@Test
+	public void testCalmString() {
+		assertThat("calm", is(equalTo(GovernmentUtils.calmString("!calm!"))));
+		assertThat(GovernmentUtils.calmString(null), is(nullValue()));
+	}
+}

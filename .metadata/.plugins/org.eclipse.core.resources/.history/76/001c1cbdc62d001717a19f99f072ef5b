@@ -1,0 +1,13 @@
+package junit_tut;
+
+public class Republican implements Politician {
+	private String type;
+
+	public Republican(String type) {
+		this.type = type;
+	}
+
+	public String get_type() {
+		return type;
+	}
+}

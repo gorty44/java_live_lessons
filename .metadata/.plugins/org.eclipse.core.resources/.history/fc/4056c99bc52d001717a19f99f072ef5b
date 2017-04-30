@@ -1,0 +1,6 @@
+package junit_tut;
+
+@FunctionalInterface
+public interface FilteringAttendees {
+	boolean filterOutOneGroup(Politician p);
+}

@@ -1,0 +1,25 @@
+package junit_tut;
+
+import java.util.List;
+
+public class GovernmentUtils {
+	public static String calmString(String s) {
+		if (s == null)
+			return null;
+		return s.replaceAll("!", "");
+	}
+
+	public static List<Politician> calmAttendees(List<Politician> attendees) {
+		if (attendees == null)
+			return null;
+		if (attendees.contains(new Democrat()) && attendees.contains(new Republican())) {
+			double random = Math.random();
+			if (random >= 0.5)
+				attendees.stream().filter(e -> e.getClass().getName().equals("Republican"));
+			else
+				attendees.stream().filter(e -> e.getClass().getName().equals("Democrat"));
+			return attendees;
+		}
+		
+	}
+}

@@ -1,0 +1,8 @@
+package junit_tut;
+
+public class Republican implements Politician {
+	private String name;
+	public Republican(String name) {
+		this.name = name;
+	}
+}

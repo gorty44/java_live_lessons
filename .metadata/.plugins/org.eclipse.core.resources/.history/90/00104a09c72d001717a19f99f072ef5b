@@ -1,0 +1,5 @@
+package junit_tut;
+
+public interface Politician {
+	String get_type();
+}

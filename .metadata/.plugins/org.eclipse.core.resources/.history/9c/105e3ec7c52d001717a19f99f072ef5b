@@ -1,0 +1,24 @@
+package junit_tut;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
+import org.junit.Test;
+
+public class UnitTests {
+	@Test
+	public void testCalmString() {
+		assertThat("calm", is(equalTo(GovernmentUtils.calmString("!calm!"))));
+		assertThat(GovernmentUtils.calmString(null), is(nullValue()));
+	}
+
+	@Test
+	public void testCalmAttendees() {
+		List<Politician> attendees = { new Republican(), new Republican() };
+
+	}
+}
