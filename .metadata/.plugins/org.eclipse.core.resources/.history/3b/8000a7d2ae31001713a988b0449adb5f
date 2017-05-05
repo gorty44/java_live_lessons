@@ -1,0 +1,11 @@
+package oop;
+
+import java.util.HashMap;
+
+public class Test {
+	private HashMap<SomeKey, String> = new Hashmap<>();
+	
+	private class SomeClass {
+		
+	}
+}

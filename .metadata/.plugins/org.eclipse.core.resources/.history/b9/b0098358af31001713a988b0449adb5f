@@ -1,0 +1,33 @@
+package oop;
+
+import java.util.HashMap;
+
+public class Test {
+	private HashMap<SomeKey, String> map = new HashMap<>();
+
+	private class SomeKey {
+		private int parameter;
+		
+		public SomeKey(int param) {
+			parameter = param;
+		}
+		
+		@Override
+		public int hashCode() {
+			return -1;
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o)
+				return true;
+			if (o == null)
+				return false;
+
+			SomeKey sk = (SomeKey) o;
+			if (this.parameter == sk.parameter)
+				return true;
+			return false;
+		}
+	}
+}

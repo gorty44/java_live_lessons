@@ -1,0 +1,5 @@
+package wildcards;
+
+public interface Repairable {
+
+}

@@ -1,0 +1,12 @@
+package wildcards;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class HRDemo {
+	public static void main(String[] args) {
+		List<Employee> employees = Arrays.asList(new Employee("Dawid"), new Employee("Klaudia"), new Employee("Emil"),
+				new Employee("Random"));
+		HR.printEmpNames(employees);
+	}
+}

@@ -1,0 +1,18 @@
+package wildcards;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+public class HR {
+	public static void printEmpNames(List<Employee> employees) {
+		employees.stream().map(Employee::getName).forEach(System.out::println);
+	}
+											// Works for any type "?" that extends Employee
+	public static void printEmpAndSubclassNames(List<? extends Employee> employees) {
+		employees.stream().map(Employee::getName).forEach(System.out::println);
+	}
+
+}

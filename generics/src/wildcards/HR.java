@@ -1,0 +1,24 @@
+package wildcards;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+public class HR {
+	public static void printEmpNames(List<Employee> employees) {
+		employees.stream().map(Employee::getName).forEach(System.out::println);
+	}
+
+	// Works for any type "?" that extends Employee or Employee itself
+	// price of this operation is that I can't modify employees list inside
+	// method body
+	// because it wouldn't know what is legal and what's not.
+	// Just like adding Double to the List of Integers. It's illegal.
+	public static void printEmpAndSubclassNames(List<? extends Employee> employees) {
+		employees.stream().map(Employee::getName).forEach(System.out::println);
+	}
+																				// "?" is a super class of Employee
+	public static void printAllFiltered(List<? extends Employee> employees, Predicate<? super Employee> test) {
+		employees.stream().filter(test).map(Employee::getName).forEach(System.out::println);
+	}
+
+}
