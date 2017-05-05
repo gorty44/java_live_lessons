@@ -1,5 +1,0 @@
-package lambdas_part2;
-
-public interface TwoStringPredicate {
-	boolean predicate(String s1, String s2);
-}

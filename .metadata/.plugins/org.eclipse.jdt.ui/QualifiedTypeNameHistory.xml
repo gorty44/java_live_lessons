@@ -2,12 +2,33 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.function.Predicate"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java_8_interfaces.Square"/>
 <fullyQualifiedTypeName name="java_8_interfaces.EquilateralTriangle"/>
 <fullyQualifiedTypeName name="java_8_interfaces.RegularPolygon"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.stream.Collector"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="junit_tut.StringUtils"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="junit_tut.FilteringAttendees"/>
+<fullyQualifiedTypeName name="junit_tut.Republican"/>
+<fullyQualifiedTypeName name="junit_tut.Politician"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="junit_tut.GovernmentUtils"/>
+<fullyQualifiedTypeName name="lambdas_part1.ElementUtils"/>
+<fullyQualifiedTypeName name="org.hamcrest.core.CombinableMatcher"/>
+<fullyQualifiedTypeName name="org.hamcrest.CoreMatchers"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.junit.rules.ExpectedException"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="oop.Employee"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+<fullyQualifiedTypeName name="java.text.NumberFormat"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="oop.Salaried"/>
+<fullyQualifiedTypeName name="oop.Hourly"/>
 </qualifiedTypeNameHistroy>

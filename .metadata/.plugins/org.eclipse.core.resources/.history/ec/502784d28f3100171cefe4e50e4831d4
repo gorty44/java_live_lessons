@@ -1,0 +1,18 @@
+package oop;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class CurrencyPrinter {
+	public static void main(String[] args) {
+		double salary = 1234567.8901234567;
+		NumberFormat nf = NumberFormat.getCurrencyInstance();
+		
+		System.out.println(nf.format(salary));
+		
+		nf = NumberFormat.getCurrencyInstance(Locale.JAPAN);
+		System.out.println(nf.format(salary));
+		
+		System.out.println(nf.getClass().getName());
+	}
+}

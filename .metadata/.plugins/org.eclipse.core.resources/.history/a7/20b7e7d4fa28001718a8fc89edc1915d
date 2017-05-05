@@ -1,9 +1,0 @@
-package java_8_interfaces;
-
-public class Test {
-	public static void main(String[] args) {
-		RegularPolygon[] rps = { new Square(5), new EquilateralTriangle(2) };
-
-		System.out.println(RegularPolygon.totalSlides(rps));
-	}
-}

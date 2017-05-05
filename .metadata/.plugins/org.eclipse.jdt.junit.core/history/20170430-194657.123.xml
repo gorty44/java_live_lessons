@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="UnitTesting" project="lambdas_part1" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="lambdas_part1.UnitTesting" time="0.254">
-    <testcase name="betterEntryTest" classname="lambdas_part1.UnitTesting" time="0.254"/>
-  </testsuite>
-</testrun>

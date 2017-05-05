@@ -1,6 +1,0 @@
-package java_8_interfaces;
-
-public interface RegularPolygon {
-	int getNumSlides();
-	int getSideLength();
-}
